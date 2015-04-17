@@ -1027,6 +1027,7 @@
     </Compile>
     <Compile Include="pages\vi\man\pages\social-network.Master.cs">
       <DependentUpon>social-network.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\vi\man\pages\social-network.Master.designer.cs">
       <DependentUpon>social-network.Master</DependentUpon>
