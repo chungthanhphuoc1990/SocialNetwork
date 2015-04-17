@@ -1,0 +1,7 @@
+﻿a img{border: none;}
+ol li{list-style: decimal outside;}
+div#container{width: 780px;margin: 0 auto;padding: 1em 0;}
+div.side-by-side{width: 100%;margin-bottom: 1em;}
+div.side-by-side > div{float: left;width: 50%;}
+div.side-by-side > div > em{margin-bottom: 10px;display: block;}
+.clearfix:after{content: "\0020";display: block;height: 0;clear: both;overflow: hidden;visibility: hidden;}

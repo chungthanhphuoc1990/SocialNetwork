@@ -1,0 +1,522 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PresentationPage.master.cs" Inherits="Presentation.page.PresentationPage" %>
+<%@ Register Src="~/modules/plugin-follower.ascx" TagPrefix="uc1" TagName="pluginfollower" %>
+<%@ Register Src="~/modules/plugin-friend.ascx" TagPrefix="uc1" TagName="pluginfriend" %>
+<%@ Register Src="~/modules/plugin-top-follower.ascx" TagPrefix="uc1" TagName="plugintopfollower" %>
+<%@ Register Src="~/modules/plugin-top-news.ascx" TagPrefix="uc1" TagName="plugintopnews" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Social NetWork</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chung Thành Phước"/>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap-social/bootstrap-social.css" rel="stylesheet" />
+    <%--End--%>
+    
+    <!-- Custom CSS -->
+    <link href="../css/dist/css/sb-admin-2.css" rel="stylesheet" />
+    <link href="../css/page/style.css" rel="stylesheet" />
+    <%--End--%>
+    
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <%--End--%>
+    
+    <!-- jQuery -->
+    <script src="../js/jquery-2.1.3.js"></script>
+    <script src="../js/MyScript.js"></script>
+    <script src="../js/Mask/jquery.maskedinput.js"></script>
+    <%--PageLoad--%>
+    <script>
+        function pageLoad() {
+            TooltipA(".deltotrash", "bottom");
+            TooltipA(".btnAddNew", "bottom");
+            TooltipA(".btnDel", "bottom");
+            TooltipA(".btnSave", "bottom");
+            TooltipA(".btnCancel", "bottom");
+            TooltipA(".btnlist", "bottom");
+            TooltipA(".refresh", "bottom");
+            TooltipA(".btnSearch", "bottom");
+            TooltipA(".textbox-search", "bottom");
+            TooltipA(".dropdownlistfillter", "bottom");
+            TooltipA(".btn-refresh", "right");
+            TooltipA(".groupbutton", "bottom");
+            TooltipA(".search", "bottom");
+            TooltipA(".num", "bottom");
+            MarkInputDay(".daytime");
+        }
+    </script>
+    <%--End--%>
+
+     <%--Fancybox--%>
+    <script src="../js/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link href="../js/fancyBox/source/jquery.fancybox.css" rel="stylesheet" />
+    <script src="../js/fancyBox/source/jquery.fancybox.pack.js"></script>
+    
+    <link href="../js/fancyBox/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <script src="../js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="../js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link href="../js/fancyBox/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    <script src="../js/fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".imgfancy").fancybox({
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                }
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: { type: 'inside' },
+                    buttons: {}
+                }
+            });
+            $('.fancybox-media').fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                helpers: {
+                    media: {}
+                }
+            });
+            $(".fancybox").fancybox({
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+                autoSize: true,
+                type: 'iframe',
+                iframe: {
+                    preload: false // fixes issue with iframe and IE
+                }
+            });
+            $(".gallerypdf").click(function () {
+                $.fancybox({
+                    type: 'html',
+                    autoSize: false,
+                    content: '<embed src="' + this.href + '#nameddest=self&page=1&view=FitH,0&zoom=80,0,0" type="application/pdf" height="99%" width="100%" />',
+                    beforeClose: function () {
+                        $(".fancybox-inner").unwrap();
+                    }
+                }); //fancybox
+                return false;
+            }); // pdf 
+            $("#DialogLink").fancybox({
+                openEffect: 'elastic',
+                closeEffect: 'elastic',
+
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                }
+            }).trigger("click"); //Adv
+        });
+    </script>
+    <%--End--%>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../css/bootstrap/dist/js/bootstrap.min.js"></script>
+    <%--End--%>
+    
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/sb-admin-2.js"></script>
+    <%--End--%>
+    
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../css/metisMenu/dist/metisMenu.js"></script>
+    <%--PageLoad--%>
+    <script>
+        function pageLoad() {
+            TooltipA(".btnCloseFormedit", "right");
+            TooltipA("#btnCloseForm", "right");
+            TooltipA("#btnCloseFormedit", "right");
+            TooltipA(".deltotrash", "bottom");
+            TooltipA(".btnAddNew", "bottom");
+            TooltipA(".btnDel", "bottom");
+            TooltipA(".btnSave", "bottom");
+            TooltipA(".btnCancel", "bottom");
+            TooltipA(".btnlist", "bottom");
+            TooltipA(".refresh", "bottom");
+            TooltipA(".btnSearch", "bottom");
+            TooltipA(".textbox-search", "bottom");
+            TooltipA(".dropdownlistfillter", "bottom");
+            TooltipA(".btn-refresh", "right");
+            TooltipA(".groupbutton", "bottom");
+            TooltipA(".search", "bottom");
+            TooltipA(".num", "bottom");
+            MarkInputDay(".daytime");
+        }
+    </script>
+    <%--End--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formSocialNetWork" runat="server">
+    <asp:ScriptManager runat="server"/>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <asp:UpdatePanel ID="UpdatePanelGridMessages" runat="server">
+        <ContentTemplate>
+            <nav class="navbar navbar-default navbar-fixed-top" style="background: #F989C0;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Social Network</a>
+                </div>
+                <div class="navbar-form navbar-left" role="search">
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Nhập vào tên hoặc số điện thoại để tìm kiếm" style="width: 100%" />
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <ul class="nav navbar-top-links navbar-right" runat="server" ID="navRightLogin" Visible="False">
+                        <li class="dropdown">
+                        <a class="dropdown-toggle dropdowna" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user fa-fw"></i> <asp:Label ID="lbUserName" runat="server" Text=""></asp:Label> <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#" runat="server" ID="btnProfice" OnServerClick="btnProfice_Click"><i class="fa fa-user fa-fw"></i> Trang cá nhân</a>
+                            </li>
+                            <li><a href="#" runat="server" ID="btnAboutTop" OnServerClick="btnAboutTop_Click"><i class="fa fa-gear fa-fw"></i> Thông tin cá nhân</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#" runat="server" ID="btnLogout" OnServerClick="btnLogout_Click"><i class="fa fa-sign-out fa-fw"></i>Thoát</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <%=_ErrorMessages %>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i> <%=_CountMessage %>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages" runat="server" ID="drmsg">
+                            <asp:ListView ID="ListViewAll" runat="server" DataKeyNames="TweetID" ItemPlaceholderID="lstViewAll" OnItemCommand="ListViewAll_ItemCommand" OnItemDataBound="ListViewAll_ItemDataBound">
+                                <ItemTemplate>
+                                    <li>
+                                        <span style="display: block;padding: 3px 20px;white-space: nowrap">
+                                            <div>
+                                                <strong>
+                                                    <%# Eval("FullName") %> <img src="../img/new.gif" runat="server" ID="iconNewMessage"/>
+                                                    <input type="hidden" id="hiddenId" value='<%# Eval("TweetID") %>' runat="server" name="hiddenId" />
+                                                    <input type="hidden" id="hiddenfalg" value='<%# Eval("flag") %>' runat="server" name="hiddenfalg" />
+                                                </strong>
+                                                <span class="pull-right text-muted">
+                                                    <em><%# Eval("TweetDate","{0:dd-MM-yyyy}") %></em>
+                                                </span>
+                                            </div>
+                                            <div style="text-align: justify">
+                                                <%# Eval("Message") %>
+                                            </div>
+                                            <div style="margin-top: 8px;">
+                                                <asp:Button runat="server" ID="bntSendMessagePopup" CommandName="_sendMessagePopup" CssClass="btn btn-danger btn-xs" Text="Xem"/>
+                                                <asp:Button runat="server" ID="btnDelMessagePopup" CommandName="_delMessagePopup" CssClass="btn btn-danger btn-xs" Text="Xoá"/>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li class="divider"></li>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            <li>
+                                <a class="text-center" href="#" runat="server" ID="btnViewMessageAll">
+                                    <strong>Xem tất cả</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                        <!-- /.dropdown-messages -->
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts" runat="server" ID="ddlNewStatus">
+                                <asp:ListView ID="ListViewNewsStatus" runat="server" DataKeyNames="Likes_ID" ItemPlaceholderID="lstViewAll" OnItemCommand="ListViewNewsStatus_ItemCommand" OnItemDataBound="ListViewNewsStatus_ItemDataBound">
+                                    <ItemTemplate>
+                                         <li>
+                                            <span style="display: block;padding: 3px 20px;white-space: normal">
+                                                <div>
+                                                    <i class="fa fa-comment fa-fw"></i> <b><%# Eval("FullName") %></b> đã thích bài viết của bạn
+                                                    <span class="pull-right text-muted small">Vào lúc <%# Eval("DateLike","{0:hh:mm}") %></span>
+                                                    <input type="hidden" id="hiddenId" value='<%# Eval("Wall_ID") %>' runat="server" name="hiddenId" />
+                                                </div>
+                                            </span>
+                                            <div style="margin-top: 0;margin-left: 24px;">
+                                               <asp:Button runat="server" ID="bntNewStatusPopup" CommandName="_newStatusPopup" CssClass="btn btn-danger btn-xs" Text="Xem"/>
+                                            </div>
+                                        </li>
+                                        <li class="divider"></li>
+                                    </ItemTemplate>
+                                </asp:ListView>
+                                <li>
+                                    <a class="text-center" href="#">
+                                        <strong>Xem tất cả</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-alerts -->
+                        </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <ul class="nav navbar-top-links navbar-right" runat="server" ID="nvaRightSigin">
+                    <li>
+                            <a href="/login-page/">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="/login-page/">Đăng ký</a>
+                    </li>
+                
+                </ul>
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse" style="margin-top: 14px;">
+                        <%--Box-Follower--%>
+                            <uc1:pluginfollower runat="server" id="pluginfollower" />
+                        <%--End--%>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+            </nav>
+         </ContentTemplate>
+        <Triggers>
+            <asp:AsyncPostBackTrigger ControlID="ListViewAll" EventName="ItemCommand"/>
+        </Triggers>
+    </asp:UpdatePanel>
+        <%--End--%>
+        
+        <div id="page-wrapper" style="margin-top: 65px;">
+            <!--row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-pencil"></span> Cập nhật trạng thái
+                            <div class="pull-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        Chức năng
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li>
+                                            <a href="#">Đăng bài viết</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đăng trạng thái</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                    </div>
+                     <asp:ContentPlaceHolder ID="CPl" runat="server"/>
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                        <%--Box-Top-Follower--%>
+                         <uc1:plugintopfollower runat="server" ID="plugintopfollower" />
+                         <%--End--%>
+                        <%--Box-Top-News--%>
+                         <uc1:plugintopnews runat="server" id="plugintopnews" />
+                         <%--End--%>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+        </div>
+    </div>
+    <%--Popup--%>
+    <div class="modal fade modal-width" id="myModalSendMessageRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-background">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title modal-titile">Tin nhắn</h4>
+                </div>
+                <div class="modal-body modal-body-height" style="padding: 10px;text-align: justify">
+                    <asp:UpdatePanel ID="UpdatePanelSendMessageRequest" runat="server">
+                        <ContentTemplate>
+                            <asp:Label ID="lbAccountIDRequest" runat="server" Text="" Visible="False"/>
+                            <span style="display: block;padding: 3px 20px;white-space: nowrap">
+                                <div>
+                                    <strong>
+                                        <asp:Label ID="lbFullNameMessageRequest" runat="server" Text=""/>
+                                    </strong>
+                                </div>
+                             </span>
+                             <div style="text-align: justify;padding-left: 20px;">
+                                 <asp:Label ID="lbMsgSendMessageRequest" runat="server" Text=""/>
+                             </div>
+                            <div class="form-group" style="margin-top: 10px;">
+                                <textarea type="text" rows="3" class="form-control" runat="server" ID="txtMessageRquest"/>
+                            </div>
+                            <div class="form-group">
+                                <%=_ErrorPostMessageRequest %>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                <div class="clr"></div>
+                </div>
+                <div class="modal-footer modal-footer-height">
+                    <asp:UpdatePanel ID="UpdatePanelSendMessageFooterRequest" runat="server">
+                        <ContentTemplate>
+                            <asp:Button ID="btnSendMessageRequest" runat="server" CssClass="btn btn-danger btn-sm" style="margin-top: -15px;" Text="Gửi" OnClick="btnSendMessageRequest_Click" />
+                            <button type="button" class="btn btn-danger btn-sm" style="margin-top: -15px;" data-dismiss="modal">Đóng lại</button>
+                        </ContentTemplate>
+                        <Triggers>
+                            <asp:AsyncPostBackTrigger ControlID="btnSendMessageRequest" EventName="Click"/>
+                        </Triggers>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModalMsgShow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-background">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title modal-titile">Thông báo</h4>
+                </div>
+                <div class="modal-body modal-body-height" style="padding: 10px;text-align: justify">
+                    <asp:UpdatePanel ID="UpdatePanelMsgShow" runat="server">
+                        <ContentTemplate>
+                            <span style="display: block;padding: 3px 20px;white-space: nowrap">
+                                <div>
+                                    <strong>
+                                        <asp:Label ID="lbMsgShow" runat="server" Text=""/>
+                                    </strong>
+                                </div>
+                             </span>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                <div class="clr"></div>
+                </div>
+                <div class="modal-footer modal-footer-height">
+                    <button type="button" class="btn btn-danger btn-sm" style="margin-top: -15px;" data-dismiss="modal">Đóng lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModalViewDetailNoImg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body modal-body-height" style="padding: 10px;">
+                    <asp:UpdatePanel ID="UpdatePanelViewDetailNoImg" runat="server">
+                        <ContentTemplate>
+                            <div class="col-sm-12">
+                                <ul class="chat">
+                                    <li class='left clearfix'>
+                                         <span class='chat-img pull-left'>
+                                            <img src="../img/unnamed.png" style="width: 28px;height: 28px;" class="img-rounded" runat="server" ID="imgAvatarNoImg"/>
+                                         </span>
+                                        <div class='chat-body clearfix' style="margin-left: 43px">
+                                            <div class='header'>
+                                                <a href="/profice/<%=_htmlLinkProfice %>">
+                                                    <b style="color: #000080;font-weight: bold">
+                                                        <asp:Label ID="lb_lst_UserName_ViewDetailNoImg" runat="server" Text='User Name'/>
+                                                        <asp:Label ID="lb_lst_Wall_ID_ViewDetailNoImg" runat="server" Text='' Visible="False"/>
+                                                    </b>
+                                                </a>
+                                                <p>
+                                                    <small class="text-muted"><i class="fa fa-clock-o"></i> <asp:Label ID="lb_lst_datetime_NoImages" runat="server" Text=""/></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h5 style="font-weight: bold;font-size: 18px;">
+                                            <asp:Label ID="lb_lst_titile_ViewDetailNoImg" runat="server" Text=''/>
+                                        </h5>
+                                        <p>
+                                            <asp:Label ID="lb_lst_content_ViewDetailNoImg" runat="server" Text=''/>
+                                        </p>
+                                    </li>
+                                 </ul>
+                                <hr/>
+                                <div class="well well-sm">
+                                    <ul class="chat">
+                                        <li class="left clearfix">
+                                            <span class="chat-img pull-left">
+                                                <img src="../img/unnamed.png" alt="User Avatar" class="img-circle" />
+                                            </span>
+                                            <div class="chat-body clearfix" style="margin-left: 43px">
+                                                <div class="header" style="color: #000080;font-weight: bold">
+                                                    User Comment
+                                                </div>
+                                                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small></p>
+                                                <p>
+                                                    <asp:Label ID="lbCommentNoImg" runat="server" Text=''/>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                <div class="clr"></div>
+                </div>
+                <div class="modal-footer modal-footer-height">
+                    <button type="button" class="btn btn-danger btn-sm" style="margin-top: -20px;" data-dismiss="modal">Đóng lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%--End--%>
+        
+    <%--Process--%>
+    <asp:UpdateProgress ID="UpdateProgressGridMessages" runat="server" AssociatedUpdatePanelID="UpdatePanelGridMessages">
+        <ProgressTemplate>
+            <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #000000; opacity: 0.7;">
+                <div class="loadding">
+                    <div class="loadding-main">
+                        <img src="../js/fancyBox/source/fancybox_loading.gif" style="padding: 10px;top:45%;left:50%;"/>
+                        <span class="label label-danger">
+                            Đang tải...
+                        </span>  
+                    </div>
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <asp:UpdateProgress ID="UpdateProgressSendMessageFooterRequest" runat="server" AssociatedUpdatePanelID="UpdatePanelSendMessageFooterRequest">
+        <ProgressTemplate>
+            <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #000000; opacity: 0.7;">
+                <div class="loadding">
+                    <div class="loadding-main">
+                        <img src="../js/fancyBox/source/fancybox_loading.gif" style="padding: 10px;top:45%;left:50%;"/>
+                        <span class="label label-danger">
+                            Đang tải...
+                        </span>  
+                    </div>
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <%--End--%>
+    </form>
+</body>
+</html>

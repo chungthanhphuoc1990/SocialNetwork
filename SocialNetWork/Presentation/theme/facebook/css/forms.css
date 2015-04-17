@@ -1,0 +1,29 @@
+﻿#search-text-input {
+    border-top: thin solid #e5e5e5;
+    border-right: thin solid #e5e5e5;
+    border-bottom: 0;
+    border-left: thin solid #e5e5e5;
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    float: left;
+    height: 26px;
+    margin: 5px;
+    outline: 0;
+    padding: 0.4em 0 0.4em .6em;
+    width: 400px;
+    line-height: 18.6px;
+}
+
+#button-holder {
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+    height: 23px;
+    margin: -32px -4px 0 0;
+    text-align: center;
+    width: 32px;
+}
+  
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}

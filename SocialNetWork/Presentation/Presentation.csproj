@@ -1,0 +1,1280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56BD172B-EFC2-4F92-8CBE-0E2CABED94AF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajax FileUpload Control In AspNet">
+      <HintPath>C:\Users\Administrator\Desktop\Ajax FileUpload Control In AspNet\Ajax FileUpload Control In AspNet\bin\Ajax FileUpload Control In AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\Users\Administrator\Desktop\Ajax FileUpload Control In AspNet\Ajax FileUpload Control In AspNet\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter">
+      <HintPath>..\..\..\ktktbl.edu.vn\ktktbl\Bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="LibAlert">
+      <HintPath>..\..\..\ktktbl.edu.vn\ktktbl\Bin\LibAlert.dll</HintPath>
+    </Reference>
+    <Reference Include="LibFormat">
+      <HintPath>..\..\..\ktktbl.edu.vn\ktktbl\Bin\LibFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="LibHasCode">
+      <HintPath>..\..\..\ktktbl.edu.vn\ktktbl\Bin\LibHasCode.dll</HintPath>
+    </Reference>
+    <Reference Include="LibMessageBox">
+      <HintPath>..\..\..\Twitter\Twitter\Presentation\bin\LibMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="LibWindowUI">
+      <HintPath>..\..\..\ktktbl.edu.vn\ktktbl\Bin\LibWindowUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.1.4\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.1.4\lib\net40\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.1.4\lib\net40\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.1.0.1\lib\net40\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-social\bootstrap-social.css" />
+    <Content Include="css\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="css\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="css\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="css\bootstrap\dist\js\npm.js" />
+    <Content Include="css\bootstrap\Gruntfile.js" />
+    <Content Include="css\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="css\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="css\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="css\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="css\bootstrap\js\affix.js" />
+    <Content Include="css\bootstrap\js\alert.js" />
+    <Content Include="css\bootstrap\js\button.js" />
+    <Content Include="css\bootstrap\js\carousel.js" />
+    <Content Include="css\bootstrap\js\collapse.js" />
+    <Content Include="css\bootstrap\js\dropdown.js" />
+    <Content Include="css\bootstrap\js\modal.js" />
+    <Content Include="css\bootstrap\js\popover.js" />
+    <Content Include="css\bootstrap\js\scrollspy.js" />
+    <Content Include="css\bootstrap\js\tab.js" />
+    <Content Include="css\bootstrap\js\tooltip.js" />
+    <Content Include="css\bootstrap\js\transition.js" />
+    <Content Include="css\dist\css\sb-admin-2.css" />
+    <Content Include="css\dist\css\timeline.css" />
+    <Content Include="css\dist\js\sb-admin-2.js" />
+    <Content Include="css\font-awesome\css\font-awesome.css" />
+    <Content Include="css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\metisMenu\dist\metisMenu.css" />
+    <Content Include="css\metisMenu\dist\metisMenu.js" />
+    <Content Include="css\metisMenu\dist\metisMenu.min.css" />
+    <Content Include="css\metisMenu\dist\metisMenu.min.js" />
+    <Content Include="css\metisMenu\Gruntfile.js" />
+    <Content Include="css\metisMenu\src\metisMenu.css" />
+    <Content Include="css\metisMenu\src\metisMenu.js" />
+    <Content Include="css\page\style.css" />
+    <Content Include="css\page\styles_bk.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\facebook_loading.gif" />
+    <Content Include="img\new.gif" />
+    <Content Include="img\social-network.jpg" />
+    <Content Include="img\unnamed.png" />
+    <Content Include="js\Alert\images\error.png" />
+    <Content Include="js\Alert\images\help.gif" />
+    <Content Include="js\Alert\images\important.gif" />
+    <Content Include="js\Alert\images\info.gif" />
+    <Content Include="js\Alert\images\title.gif" />
+    <Content Include="js\Alert\jquery.alerts.css" />
+    <Content Include="js\Alert\jquery.alerts.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrapfile\bootstrap.fd.css" />
+    <Content Include="js\bootstrapfile\bootstrap.fd.js" />
+    <Content Include="js\Choosen\chosen-sprite%402x.png" />
+    <Content Include="js\Choosen\chosen-sprite.png" />
+    <Content Include="js\Choosen\chosen.css" />
+    <Content Include="js\Choosen\chosen.jquery.js" />
+    <Content Include="js\Choosen\My_Style.css" />
+    <Content Include="js\docs.min.js" />
+    <Content Include="js\extention.js" />
+    <Content Include="js\fancyBox\lib\jquery-1.10.1.min.js" />
+    <Content Include="js\fancyBox\lib\jquery-1.9.0.min.js" />
+    <Content Include="js\fancyBox\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="js\fancyBox\source\blank.gif" />
+    <Content Include="js\fancyBox\source\fancybox_loading%402x.gif" />
+    <Content Include="js\fancyBox\source\fancybox_loading.gif" />
+    <Content Include="js\fancyBox\source\fancybox_overlay.png" />
+    <Content Include="js\fancyBox\source\fancybox_sprite%402x.png" />
+    <Content Include="js\fancyBox\source\fancybox_sprite.png" />
+    <Content Include="js\fancyBox\source\helpers\fancybox_buttons.png" />
+    <Content Include="js\fancyBox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="js\fancyBox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="js\fancyBox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="js\fancyBox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="js\fancyBox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="js\fancyBox\source\jquery.fancybox.css" />
+    <Content Include="js\fancyBox\source\jquery.fancybox.js" />
+    <Content Include="js\fancyBox\source\jquery.fancybox.pack.js" />
+    <Content Include="js\formatnumber.js" />
+    <Content Include="js\InputNumber.js" />
+    <Content Include="js\jquery-2.1.3.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\Mask\jquery.maskedinput.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\MyScript.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\owl.carousel\assets\css\bootstrapTheme.css" />
+    <Content Include="js\owl.carousel\assets\css\custom.css" />
+    <Content Include="js\owl.carousel\assets\css\responsive.css" />
+    <Content Include="js\owl.carousel\assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="js\owl.carousel\assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="js\owl.carousel\assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="js\owl.carousel\assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="js\owl.carousel\assets\ico\favicon.png" />
+    <Content Include="js\owl.carousel\assets\img\AjaxLoader.gif" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\controls.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\css3.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\feather.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\grab.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\modern.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\multi.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\responsive.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\tons.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\touch.png" />
+    <Content Include="js\owl.carousel\assets\img\demo-slides\zombie.png" />
+    <Content Include="js\owl.carousel\assets\img\glyphicons-halflings-green.png" />
+    <Content Include="js\owl.carousel\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="js\owl.carousel\assets\img\glyphicons-halflings.png" />
+    <Content Include="js\owl.carousel\assets\img\owl-logo.png" />
+    <Content Include="js\owl.carousel\assets\js\application.js" />
+    <Content Include="js\owl.carousel\assets\js\bootstrap-collapse.js" />
+    <Content Include="js\owl.carousel\assets\js\bootstrap-tab.js" />
+    <Content Include="js\owl.carousel\assets\js\bootstrap-transition.js" />
+    <Content Include="js\owl.carousel\assets\js\google-code-prettify\prettify.css" />
+    <Content Include="js\owl.carousel\assets\js\google-code-prettify\prettify.js" />
+    <Content Include="js\owl.carousel\assets\js\google-code-prettify\run_prettify.js" />
+    <Content Include="js\owl.carousel\assets\js\jquery-1.9.1.min.js" />
+    <Content Include="js\owl.carousel\changelog.html" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage1.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage2.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage3.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage4.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage5.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage6.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\fullimage7.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl1.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl2.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl3.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl4.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl5.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl6.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl7.jpg" />
+    <Content Include="js\owl.carousel\demos\assets\owl8.jpg" />
+    <Content Include="js\owl.carousel\demos\autoHeight.html" />
+    <Content Include="js\owl.carousel\demos\click.html" />
+    <Content Include="js\owl.carousel\demos\custom.html" />
+    <Content Include="js\owl.carousel\demos\customJson.html" />
+    <Content Include="js\owl.carousel\demos\full.html" />
+    <Content Include="js\owl.carousel\demos\images.html" />
+    <Content Include="js\owl.carousel\demos\itemsCustom.html" />
+    <Content Include="js\owl.carousel\demos\json.html" />
+    <Content Include="js\owl.carousel\demos\lazyLoad.html" />
+    <Content Include="js\owl.carousel\demos\manipulations.html" />
+    <Content Include="js\owl.carousel\demos\navOnTop.html" />
+    <Content Include="js\owl.carousel\demos\navOnTop2.html" />
+    <Content Include="js\owl.carousel\demos\one.html" />
+    <Content Include="js\owl.carousel\demos\owlStatus.html" />
+    <Content Include="js\owl.carousel\demos\progressBar.html" />
+    <Content Include="js\owl.carousel\demos\randomOrder.html" />
+    <Content Include="js\owl.carousel\demos\scaleup.html" />
+    <Content Include="js\owl.carousel\demos\sync.html" />
+    <Content Include="js\owl.carousel\demos\transitions.html" />
+    <Content Include="js\owl.carousel\index.html" />
+    <Content Include="js\owl.carousel\owl-carousel\AjaxLoader.gif" />
+    <Content Include="js\owl.carousel\owl-carousel\grabbing.png" />
+    <Content Include="js\owl.carousel\owl-carousel\owl.carousel.css" />
+    <Content Include="js\owl.carousel\owl-carousel\owl.carousel.js" />
+    <Content Include="js\owl.carousel\owl-carousel\owl.carousel.min.js" />
+    <Content Include="js\owl.carousel\owl-carousel\owl.theme.css" />
+    <Content Include="js\owl.carousel\owl-carousel\owl.transitions.css" />
+    <Content Include="js\sb-admin-2.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="modules\plugin-center.ascx" />
+    <Content Include="modules\plugin-follower.ascx" />
+    <Content Include="modules\plugin-friend.ascx" />
+    <Content Include="modules\plugin-pagechild-center.ascx" />
+    <Content Include="modules\plugin-profice.ascx" />
+    <Content Include="modules\plugin-top-follower.ascx" />
+    <Content Include="modules\plugin-top-news.ascx" />
+    <Content Include="pages\demo\themes\1\blank.html" />
+    <Content Include="pages\demo\themes\1\buttons.html" />
+    <Content Include="pages\demo\themes\1\css\blue.css" />
+    <Content Include="pages\demo\themes\1\css\blue.min.css" />
+    <Content Include="pages\demo\themes\1\css\brown.css" />
+    <Content Include="pages\demo\themes\1\css\brown.min.css" />
+    <Content Include="pages\demo\themes\1\css\default.css" />
+    <Content Include="pages\demo\themes\1\css\default.min.css" />
+    <Content Include="pages\demo\themes\1\css\orange.css" />
+    <Content Include="pages\demo\themes\1\css\orange.min.css" />
+    <Content Include="pages\demo\themes\1\css\purple.css" />
+    <Content Include="pages\demo\themes\1\css\purple.min.css" />
+    <Content Include="pages\demo\themes\1\css\_vendor.bundle.css" />
+    <Content Include="pages\demo\themes\1\css\_vendor.min.css" />
+    <Content Include="pages\demo\themes\1\forms.html" />
+    <Content Include="pages\demo\themes\1\grid.html" />
+    <Content Include="pages\demo\themes\1\icons.html" />
+    <Content Include="pages\demo\themes\1\images\food1-full.jpg" />
+    <Content Include="pages\demo\themes\1\images\food1.jpg" />
+    <Content Include="pages\demo\themes\1\images\lock-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\child-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-2.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-3.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-4.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-5.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-6.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-7.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-8.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\guy-9.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-10.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-2.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-3.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-4.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-5.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-6.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-7.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-8.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\110\woman-9.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\child-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-2.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-3.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-4.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-5.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-6.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-7.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-8.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\guy-9.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-10.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-2.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-3.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-4.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-5.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-6.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-7.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-8.jpg" />
+    <Content Include="pages\demo\themes\1\images\people\50\woman-9.jpg" />
+    <Content Include="pages\demo\themes\1\images\place1-full.jpg" />
+    <Content Include="pages\demo\themes\1\images\place1.jpg" />
+    <Content Include="pages\demo\themes\1\images\place2-full.jpg" />
+    <Content Include="pages\demo\themes\1\images\place2.jpg" />
+    <Content Include="pages\demo\themes\1\images\place3-full.jpg" />
+    <Content Include="pages\demo\themes\1\images\place3.jpg" />
+    <Content Include="pages\demo\themes\1\images\profile-cover-h150.jpg" />
+    <Content Include="pages\demo\themes\1\images\profile-cover.jpg" />
+    <Content Include="pages\demo\themes\1\images\social\100\1.jpg" />
+    <Content Include="pages\demo\themes\1\images\social\100\2.jpg" />
+    <Content Include="pages\demo\themes\1\images\social\100\3.jpg" />
+    <Content Include="pages\demo\themes\1\images\theme-boxed-1.jpg" />
+    <Content Include="pages\demo\themes\1\images\theme-boxed-2.jpg" />
+    <Content Include="pages\demo\themes\1\images\theme-boxed-3.jpg" />
+    <Content Include="pages\demo\themes\1\images\theme-coming.jpg" />
+    <Content Include="pages\demo\themes\1\images\top-logo.png" />
+    <Content Include="pages\demo\themes\1\index.html" />
+    <Content Include="pages\demo\themes\1\js\scripts.js" />
+    <Content Include="pages\demo\themes\1\js\scripts.min.js" />
+    <Content Include="pages\demo\themes\1\js\vendor.js" />
+    <Content Include="pages\demo\themes\1\js\vendor.min.js" />
+    <Content Include="pages\demo\themes\1\login.html" />
+    <Content Include="pages\demo\themes\1\messages.html" />
+    <Content Include="pages\demo\themes\1\pricing.html" />
+    <Content Include="pages\demo\themes\1\profile.html" />
+    <Content Include="pages\demo\themes\1\progress.html" />
+    <Content Include="pages\demo\themes\1\tables.html" />
+    <Content Include="pages\demo\themes\1\timeline-list.html" />
+    <Content Include="pages\demo\themes\1\users.html" />
+    <Content Include="pages\demo\themes\2\blank.html" />
+    <Content Include="pages\demo\themes\2\buttons.html" />
+    <Content Include="pages\demo\themes\2\css\blue.css" />
+    <Content Include="pages\demo\themes\2\css\blue.min.css" />
+    <Content Include="pages\demo\themes\2\css\brown.css" />
+    <Content Include="pages\demo\themes\2\css\brown.min.css" />
+    <Content Include="pages\demo\themes\2\css\default-nav-inverse.css" />
+    <Content Include="pages\demo\themes\2\css\default-nav-inverse.min.css" />
+    <Content Include="pages\demo\themes\2\css\default.css" />
+    <Content Include="pages\demo\themes\2\css\default.min.css" />
+    <Content Include="pages\demo\themes\2\css\orange.css" />
+    <Content Include="pages\demo\themes\2\css\orange.min.css" />
+    <Content Include="pages\demo\themes\2\css\purple.css" />
+    <Content Include="pages\demo\themes\2\css\purple.min.css" />
+    <Content Include="pages\demo\themes\2\css\_vendor.bundle.css" />
+    <Content Include="pages\demo\themes\2\css\_vendor.min.css" />
+    <Content Include="pages\demo\themes\2\forms.html" />
+    <Content Include="pages\demo\themes\2\grid.html" />
+    <Content Include="pages\demo\themes\2\icons.html" />
+    <Content Include="pages\demo\themes\2\images\food1-full.jpg" />
+    <Content Include="pages\demo\themes\2\images\food1.jpg" />
+    <Content Include="pages\demo\themes\2\images\lock-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\child-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-2.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-3.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-4.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-5.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-6.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-7.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-8.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\guy-9.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-10.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-2.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-3.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-4.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-5.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-6.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-7.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-8.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\110\woman-9.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\child-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-2.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-3.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-4.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-5.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-6.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-7.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-8.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\guy-9.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-10.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-2.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-3.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-4.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-5.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-6.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-7.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-8.jpg" />
+    <Content Include="pages\demo\themes\2\images\people\50\woman-9.jpg" />
+    <Content Include="pages\demo\themes\2\images\place1-full.jpg" />
+    <Content Include="pages\demo\themes\2\images\place1.jpg" />
+    <Content Include="pages\demo\themes\2\images\place2-full.jpg" />
+    <Content Include="pages\demo\themes\2\images\place2.jpg" />
+    <Content Include="pages\demo\themes\2\images\place3-full.jpg" />
+    <Content Include="pages\demo\themes\2\images\place3.jpg" />
+    <Content Include="pages\demo\themes\2\images\profile-cover-h150.jpg" />
+    <Content Include="pages\demo\themes\2\images\profile-cover.jpg" />
+    <Content Include="pages\demo\themes\2\images\social\100\1.jpg" />
+    <Content Include="pages\demo\themes\2\images\social\100\2.jpg" />
+    <Content Include="pages\demo\themes\2\images\social\100\3.jpg" />
+    <Content Include="pages\demo\themes\2\images\theme-boxed-1.jpg" />
+    <Content Include="pages\demo\themes\2\images\theme-boxed-2.jpg" />
+    <Content Include="pages\demo\themes\2\images\theme-boxed-3.jpg" />
+    <Content Include="pages\demo\themes\2\images\theme-coming.jpg" />
+    <Content Include="pages\demo\themes\2\images\top-logo.png" />
+    <Content Include="pages\demo\themes\2\index.html" />
+    <Content Include="pages\demo\themes\2\js\scripts.js" />
+    <Content Include="pages\demo\themes\2\js\scripts.min.js" />
+    <Content Include="pages\demo\themes\2\js\vendor.js" />
+    <Content Include="pages\demo\themes\2\js\vendor.min.js" />
+    <Content Include="pages\demo\themes\2\login.html" />
+    <Content Include="pages\demo\themes\2\pricing.html" />
+    <Content Include="pages\demo\themes\2\progress.html" />
+    <Content Include="pages\demo\themes\2\tables.html" />
+    <Content Include="pages\demo\themes\2\user-private-blank.html" />
+    <Content Include="pages\demo\themes\2\user-private-messages.html" />
+    <Content Include="pages\demo\themes\2\user-private-profile.html" />
+    <Content Include="pages\demo\themes\2\user-private-timeline.html" />
+    <Content Include="pages\demo\themes\2\user-private-users.html" />
+    <Content Include="pages\demo\themes\2\user-public-blank.html" />
+    <Content Include="pages\demo\themes\2\user-public-profile.html" />
+    <Content Include="pages\demo\themes\2\user-public-users.html" />
+    <Content Include="pages\demo\themes\3\blank.html" />
+    <Content Include="pages\demo\themes\3\buttons.html" />
+    <Content Include="pages\demo\themes\3\css\blue.css" />
+    <Content Include="pages\demo\themes\3\css\blue.min.css" />
+    <Content Include="pages\demo\themes\3\css\brown.css" />
+    <Content Include="pages\demo\themes\3\css\brown.min.css" />
+    <Content Include="pages\demo\themes\3\css\default-nav-inverse.css" />
+    <Content Include="pages\demo\themes\3\css\default-nav-inverse.min.css" />
+    <Content Include="pages\demo\themes\3\css\default.css" />
+    <Content Include="pages\demo\themes\3\css\default.min.css" />
+    <Content Include="pages\demo\themes\3\css\orange.css" />
+    <Content Include="pages\demo\themes\3\css\orange.min.css" />
+    <Content Include="pages\demo\themes\3\css\purple.css" />
+    <Content Include="pages\demo\themes\3\css\purple.min.css" />
+    <Content Include="pages\demo\themes\3\css\_vendor.bundle.css" />
+    <Content Include="pages\demo\themes\3\css\_vendor.min.css" />
+    <Content Include="pages\demo\themes\3\forms.html" />
+    <Content Include="pages\demo\themes\3\grid.html" />
+    <Content Include="pages\demo\themes\3\icons.html" />
+    <Content Include="pages\demo\themes\3\images\food1-full.jpg" />
+    <Content Include="pages\demo\themes\3\images\food1.jpg" />
+    <Content Include="pages\demo\themes\3\images\lock-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\child-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-2.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-3.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-4.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-5.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-6.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-7.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-8.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\guy-9.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-10.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-2.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-3.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-4.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-5.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-6.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-7.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-8.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\110\woman-9.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\child-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-2.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-3.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-4.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-5.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-6.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-7.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-8.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\guy-9.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-10.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-2.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-3.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-4.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-5.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-6.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-7.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-8.jpg" />
+    <Content Include="pages\demo\themes\3\images\people\50\woman-9.jpg" />
+    <Content Include="pages\demo\themes\3\images\place1-full.jpg" />
+    <Content Include="pages\demo\themes\3\images\place1.jpg" />
+    <Content Include="pages\demo\themes\3\images\place2-full.jpg" />
+    <Content Include="pages\demo\themes\3\images\place2.jpg" />
+    <Content Include="pages\demo\themes\3\images\place3-full.jpg" />
+    <Content Include="pages\demo\themes\3\images\place3.jpg" />
+    <Content Include="pages\demo\themes\3\images\profile-cover-h150.jpg" />
+    <Content Include="pages\demo\themes\3\images\profile-cover.jpg" />
+    <Content Include="pages\demo\themes\3\images\social\100\1.jpg" />
+    <Content Include="pages\demo\themes\3\images\social\100\2.jpg" />
+    <Content Include="pages\demo\themes\3\images\social\100\3.jpg" />
+    <Content Include="pages\demo\themes\3\images\theme-boxed-1.jpg" />
+    <Content Include="pages\demo\themes\3\images\theme-boxed-2.jpg" />
+    <Content Include="pages\demo\themes\3\images\theme-boxed-3.jpg" />
+    <Content Include="pages\demo\themes\3\images\theme-coming.jpg" />
+    <Content Include="pages\demo\themes\3\images\top-logo.png" />
+    <Content Include="pages\demo\themes\3\index.html" />
+    <Content Include="pages\demo\themes\3\js\scripts.js" />
+    <Content Include="pages\demo\themes\3\js\scripts.min.js" />
+    <Content Include="pages\demo\themes\3\js\vendor.js" />
+    <Content Include="pages\demo\themes\3\js\vendor.min.js" />
+    <Content Include="pages\demo\themes\3\login.html" />
+    <Content Include="pages\demo\themes\3\pricing.html" />
+    <Content Include="pages\demo\themes\3\progress.html" />
+    <Content Include="pages\demo\themes\3\tables.html" />
+    <Content Include="pages\demo\themes\3\user-private-blank.html" />
+    <Content Include="pages\demo\themes\3\user-private-messages.html" />
+    <Content Include="pages\demo\themes\3\user-private-profile.html" />
+    <Content Include="pages\demo\themes\3\user-private-timeline.html" />
+    <Content Include="pages\demo\themes\3\user-private-users.html" />
+    <Content Include="pages\demo\themes\3\user-public-blank.html" />
+    <Content Include="pages\demo\themes\3\user-public-profile.html" />
+    <Content Include="pages\demo\themes\3\user-public-timeline.html" />
+    <Content Include="pages\demo\themes\3\user-public-users.html" />
+    <Content Include="pages\demo\themes\index.html" />
+    <Content Include="page\Login.aspx" />
+    <Content Include="page\page-childs.aspx" />
+    <Content Include="page\Profice.aspx" />
+    <Content Include="page\Search.aspx" />
+    <Content Include="page\slidebar.aspx" />
+    <Content Include="page\test.aspx" />
+    <Content Include="pages\demo\themes\1\css\default.css.map" />
+    <Content Include="pages\demo\themes\1\fonts\fontawesome-webfont.eot" />
+    <Content Include="pages\demo\themes\1\fonts\fontawesome-webfont.svg" />
+    <Content Include="pages\demo\themes\1\fonts\fontawesome-webfont.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\fontawesome-webfont.woff" />
+    <Content Include="pages\demo\themes\1\fonts\FontAwesome.otf" />
+    <Content Include="pages\demo\themes\1\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="pages\demo\themes\1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="pages\demo\themes\1\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-arrows.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-arrows.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-arrows.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-arrows.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-clothing.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-clothing.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-clothing.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-clothing.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-emotions.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-emotions.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-emotions.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-emotions.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-food.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-food.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-food.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-food.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-general.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-general.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-general.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-general.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-household.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-household.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-household.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-household.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-medical-science.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-medical-science.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-medical-science.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-medical-science.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-multimedia.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-multimedia.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-multimedia.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-multimedia.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-nature.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-nature.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-nature.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-nature.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-shopping-finance.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-shopping-finance.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-shopping-finance.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-shopping-finance.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-sports.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-sports.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-sports.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-sports.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-vehicle-navigation.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-vehicle-navigation.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-vehicle-navigation.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-vehicle-navigation.woff" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-weather.eot" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-weather.svg" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-weather.ttf" />
+    <Content Include="pages\demo\themes\1\fonts\picto-foundry-weather.woff" />
+    <Content Include="pages\demo\themes\2\css\default.css.map" />
+    <Content Include="pages\demo\themes\2\fonts\fontawesome-webfont.eot" />
+    <Content Include="pages\demo\themes\2\fonts\fontawesome-webfont.svg" />
+    <Content Include="pages\demo\themes\2\fonts\fontawesome-webfont.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\fontawesome-webfont.woff" />
+    <Content Include="pages\demo\themes\2\fonts\FontAwesome.otf" />
+    <Content Include="pages\demo\themes\2\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="pages\demo\themes\2\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="pages\demo\themes\2\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-arrows.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-arrows.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-arrows.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-arrows.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-clothing.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-clothing.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-clothing.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-clothing.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-emotions.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-emotions.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-emotions.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-emotions.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-food.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-food.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-food.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-food.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-general.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-general.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-general.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-general.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-household.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-household.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-household.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-household.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-medical-science.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-medical-science.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-medical-science.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-medical-science.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-multimedia.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-multimedia.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-multimedia.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-multimedia.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-nature.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-nature.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-nature.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-nature.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-shopping-finance.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-shopping-finance.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-shopping-finance.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-shopping-finance.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-sports.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-sports.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-sports.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-sports.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-vehicle-navigation.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-vehicle-navigation.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-vehicle-navigation.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-vehicle-navigation.woff" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-weather.eot" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-weather.svg" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-weather.ttf" />
+    <Content Include="pages\demo\themes\2\fonts\picto-foundry-weather.woff" />
+    <Content Include="pages\demo\themes\3\css\default.css.map" />
+    <Content Include="pages\demo\themes\3\fonts\fontawesome-webfont.eot" />
+    <Content Include="pages\demo\themes\3\fonts\fontawesome-webfont.svg" />
+    <Content Include="pages\demo\themes\3\fonts\fontawesome-webfont.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\fontawesome-webfont.woff" />
+    <Content Include="pages\demo\themes\3\fonts\FontAwesome.otf" />
+    <Content Include="pages\demo\themes\3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="pages\demo\themes\3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="pages\demo\themes\3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-arrows.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-arrows.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-arrows.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-arrows.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-clothing.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-clothing.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-clothing.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-clothing.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-emotions.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-emotions.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-emotions.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-emotions.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-food.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-food.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-food.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-food.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-general.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-general.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-general.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-general.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-household.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-household.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-household.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-household.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-medical-science.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-medical-science.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-medical-science.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-medical-science.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-multimedia.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-multimedia.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-multimedia.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-multimedia.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-nature.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-nature.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-nature.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-nature.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-shopping-finance.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-shopping-finance.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-shopping-finance.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-shopping-finance.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-sports.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-sports.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-sports.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-sports.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-vehicle-navigation.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-vehicle-navigation.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-vehicle-navigation.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-vehicle-navigation.woff" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-weather.eot" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-weather.svg" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-weather.ttf" />
+    <Content Include="pages\demo\themes\3\fonts\picto-foundry-weather.woff" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="page\test2.aspx" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="theme\facebook\css\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="theme\facebook\css\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="theme\facebook\css\bootstrap\dist\js\npm.js" />
+    <Content Include="theme\facebook\css\bootstrap\Gruntfile.js" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\affix.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\alert.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\button.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\carousel.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\collapse.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\dropdown.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\modal.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\popover.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\scrollspy.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\tab.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\tooltip.js" />
+    <Content Include="theme\facebook\css\bootstrap\js\transition.js" />
+    <Content Include="theme\facebook\css\forms.css" />
+    <Content Include="theme\facebook\css\layout.css" />
+    <Content Include="theme\facebook\css\styles.css" />
+    <Content Include="theme\facebook\images\magnifying_glass.png" />
+    <Content Include="theme\facebook\index.html" />
+    <Content Include="theme\facebook\js\Fb_MyScript.js" />
+    <Content Include="theme\facebook\page\Default.aspx" />
+    <Content Include="Upload\bg_5.jpg" />
+    <Content Include="Upload\example-slide-4.jpg" />
+    <Content Include="Upload\piano.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\English.language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English.language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\English.language.vi-vn.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English.language.vi-vn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="modules\FileUploadController.cs" />
+    <Compile Include="modules\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-center.ascx.cs">
+      <DependentUpon>plugin-center.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-center.ascx.designer.cs">
+      <DependentUpon>plugin-center.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-follower.ascx.cs">
+      <DependentUpon>plugin-follower.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-follower.ascx.designer.cs">
+      <DependentUpon>plugin-follower.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-friend.ascx.cs">
+      <DependentUpon>plugin-friend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-friend.ascx.designer.cs">
+      <DependentUpon>plugin-friend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-pagechild-center.ascx.cs">
+      <DependentUpon>plugin-pagechild-center.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-pagechild-center.ascx.designer.cs">
+      <DependentUpon>plugin-pagechild-center.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-profice.ascx.cs">
+      <DependentUpon>plugin-profice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-profice.ascx.designer.cs">
+      <DependentUpon>plugin-profice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-top-follower.ascx.cs">
+      <DependentUpon>plugin-top-follower.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-top-follower.ascx.designer.cs">
+      <DependentUpon>plugin-top-follower.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\plugin-top-news.ascx.cs">
+      <DependentUpon>plugin-top-news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\plugin-top-news.ascx.designer.cs">
+      <DependentUpon>plugin-top-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="page\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\page-child.Master.cs">
+      <DependentUpon>page-child.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\page-child.Master.designer.cs">
+      <DependentUpon>page-child.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\page-childs.aspx.cs">
+      <DependentUpon>page-childs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\page-childs.aspx.designer.cs">
+      <DependentUpon>page-childs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\PresentationPage.Master.cs">
+      <DependentUpon>PresentationPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\PresentationPage.Master.designer.cs">
+      <DependentUpon>PresentationPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="page\Profice.aspx.cs">
+      <DependentUpon>Profice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Profice.aspx.designer.cs">
+      <DependentUpon>Profice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\slidebar.aspx.cs">
+      <DependentUpon>slidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\slidebar.aspx.designer.cs">
+      <DependentUpon>slidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\test2.aspx.cs">
+      <DependentUpon>test2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\test2.aspx.designer.cs">
+      <DependentUpon>test2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="theme\facebook\page\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="theme\facebook\page\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="theme\facebook\page\facebook_theme.Master.cs">
+      <DependentUpon>facebook_theme.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="theme\facebook\page\facebook_theme.Master.designer.cs">
+      <DependentUpon>facebook_theme.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\owl.carousel\demos\json\customData.json" />
+    <Content Include="js\owl.carousel\demos\json\data.json" />
+    <Content Include="js\owl.carousel\LICENSE" />
+    <Content Include="js\owl.carousel\README.md" />
+    <Content Include="page\PresentationPage.Master" />
+    <Content Include="css\bootstrap\.bower.json" />
+    <Content Include="css\bootstrap\bower.json" />
+    <Content Include="css\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap\grunt\.jshintrc" />
+    <Content Include="css\bootstrap\grunt\configBridge.json" />
+    <Content Include="css\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="css\bootstrap\js\.jscsrc" />
+    <Content Include="css\bootstrap\js\.jshintrc" />
+    <Content Include="css\bootstrap\less\.csscomb.json" />
+    <Content Include="css\bootstrap\less\.csslintrc" />
+    <Content Include="css\bootstrap\less\alerts.less" />
+    <Content Include="css\bootstrap\less\badges.less" />
+    <Content Include="css\bootstrap\less\bootstrap.less" />
+    <Content Include="css\bootstrap\less\breadcrumbs.less" />
+    <Content Include="css\bootstrap\less\button-groups.less" />
+    <Content Include="css\bootstrap\less\buttons.less" />
+    <Content Include="css\bootstrap\less\carousel.less" />
+    <Content Include="css\bootstrap\less\close.less" />
+    <Content Include="css\bootstrap\less\code.less" />
+    <Content Include="css\bootstrap\less\component-animations.less" />
+    <Content Include="css\bootstrap\less\dropdowns.less" />
+    <Content Include="css\bootstrap\less\forms.less" />
+    <Content Include="css\bootstrap\less\glyphicons.less" />
+    <Content Include="css\bootstrap\less\grid.less" />
+    <Content Include="css\bootstrap\less\input-groups.less" />
+    <Content Include="css\bootstrap\less\jumbotron.less" />
+    <Content Include="css\bootstrap\less\labels.less" />
+    <Content Include="css\bootstrap\less\list-group.less" />
+    <Content Include="css\bootstrap\less\media.less" />
+    <Content Include="css\bootstrap\less\mixins\alerts.less" />
+    <Content Include="css\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="css\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="css\bootstrap\less\mixins\buttons.less" />
+    <Content Include="css\bootstrap\less\mixins\center-block.less" />
+    <Content Include="css\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="css\bootstrap\less\mixins\forms.less" />
+    <Content Include="css\bootstrap\less\mixins\gradients.less" />
+    <Content Include="css\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="css\bootstrap\less\mixins\grid.less" />
+    <Content Include="css\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="css\bootstrap\less\mixins\image.less" />
+    <Content Include="css\bootstrap\less\mixins\labels.less" />
+    <Content Include="css\bootstrap\less\mixins\list-group.less" />
+    <Content Include="css\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="css\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="css\bootstrap\less\mixins\opacity.less" />
+    <Content Include="css\bootstrap\less\mixins\pagination.less" />
+    <Content Include="css\bootstrap\less\mixins\panels.less" />
+    <Content Include="css\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="css\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="css\bootstrap\less\mixins\resize.less" />
+    <Content Include="css\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="css\bootstrap\less\mixins\size.less" />
+    <Content Include="css\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="css\bootstrap\less\mixins\table-row.less" />
+    <Content Include="css\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="css\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="css\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="css\bootstrap\less\mixins.less" />
+    <Content Include="css\bootstrap\less\modals.less" />
+    <Content Include="css\bootstrap\less\navbar.less" />
+    <Content Include="css\bootstrap\less\navs.less" />
+    <Content Include="css\bootstrap\less\normalize.less" />
+    <Content Include="css\bootstrap\less\pager.less" />
+    <Content Include="css\bootstrap\less\pagination.less" />
+    <Content Include="css\bootstrap\less\panels.less" />
+    <Content Include="css\bootstrap\less\popovers.less" />
+    <Content Include="css\bootstrap\less\print.less" />
+    <Content Include="css\bootstrap\less\progress-bars.less" />
+    <Content Include="css\bootstrap\less\responsive-embed.less" />
+    <Content Include="css\bootstrap\less\responsive-utilities.less" />
+    <Content Include="css\bootstrap\less\scaffolding.less" />
+    <Content Include="css\bootstrap\less\tables.less" />
+    <Content Include="css\bootstrap\less\theme.less" />
+    <Content Include="css\bootstrap\less\thumbnails.less" />
+    <Content Include="css\bootstrap\less\tooltip.less" />
+    <Content Include="css\bootstrap\less\type.less" />
+    <Content Include="css\bootstrap\less\utilities.less" />
+    <Content Include="css\bootstrap\less\variables.less" />
+    <Content Include="css\bootstrap\less\wells.less" />
+    <Content Include="css\bootstrap\LICENSE" />
+    <Content Include="css\bootstrap\package.json" />
+    <Content Include="css\bootstrap\README.md" />
+    <Content Include="css\font-awesome\.bower.json" />
+    <Content Include="css\font-awesome\.gitignore" />
+    <Content Include="css\font-awesome\.npmignore" />
+    <Content Include="css\font-awesome\bower.json" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="css\font-awesome\less\bordered-pulled.less" />
+    <Content Include="css\font-awesome\less\core.less" />
+    <Content Include="css\font-awesome\less\extras.less" />
+    <Content Include="css\font-awesome\less\fixed-width.less" />
+    <Content Include="css\font-awesome\less\font-awesome.less" />
+    <Content Include="css\font-awesome\less\icons.less" />
+    <Content Include="css\font-awesome\less\larger.less" />
+    <Content Include="css\font-awesome\less\list.less" />
+    <Content Include="css\font-awesome\less\mixins.less" />
+    <Content Include="css\font-awesome\less\path.less" />
+    <Content Include="css\font-awesome\less\rotated-flipped.less" />
+    <Content Include="css\font-awesome\less\spinning.less" />
+    <Content Include="css\font-awesome\less\stacked.less" />
+    <Content Include="css\font-awesome\less\variables.less" />
+    <Content Include="css\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="css\font-awesome\scss\_core.scss" />
+    <Content Include="css\font-awesome\scss\_extras.scss" />
+    <Content Include="css\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="css\font-awesome\scss\_icons.scss" />
+    <Content Include="css\font-awesome\scss\_larger.scss" />
+    <Content Include="css\font-awesome\scss\_list.scss" />
+    <Content Include="css\font-awesome\scss\_mixins.scss" />
+    <Content Include="css\font-awesome\scss\_path.scss" />
+    <Content Include="css\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="css\font-awesome\scss\_spinning.scss" />
+    <Content Include="css\font-awesome\scss\_stacked.scss" />
+    <Content Include="css\font-awesome\scss\_variables.scss" />
+    <Content Include="css\font-awesome\scss\font-awesome.scss" />
+    <Content Include="css\metisMenu\.bower.json" />
+    <Content Include="css\metisMenu\bower.json" />
+    <Content Include="css\metisMenu\LICENSE" />
+    <Content Include="css\metisMenu\package.json" />
+    <Content Include="css\metisMenu\README.md" />
+    <Content Include="css\bootstrap-social\.bower.json" />
+    <Content Include="css\bootstrap-social\.editorconfig" />
+    <Content Include="css\bootstrap-social\.gitignore" />
+    <Content Include="css\bootstrap-social\bootstrap-social.less" />
+    <Content Include="css\bootstrap-social\bootstrap-social.scss" />
+    <Content Include="css\bootstrap-social\bower.json" />
+    <Content Include="css\bootstrap-social\README.md" />
+    <Content Include="page\page-child.Master" />
+    <Content Include="modules\FileUploadHandler.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="theme\facebook\page\facebook_theme.Master" />
+    <Content Include="theme\facebook\css\bootstrap\.bower.json" />
+    <Content Include="theme\facebook\css\bootstrap\bower.json" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="theme\facebook\css\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="theme\facebook\css\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="theme\facebook\css\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="theme\facebook\css\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="theme\facebook\css\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="theme\facebook\css\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="theme\facebook\css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="theme\facebook\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="theme\facebook\css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="theme\facebook\css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="theme\facebook\css\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\.jshintrc" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\configBridge.json" />
+    <Content Include="theme\facebook\css\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="theme\facebook\css\bootstrap\js\.jscsrc" />
+    <Content Include="theme\facebook\css\bootstrap\js\.jshintrc" />
+    <Content Include="theme\facebook\css\bootstrap\less\.csscomb.json" />
+    <Content Include="theme\facebook\css\bootstrap\less\.csslintrc" />
+    <Content Include="theme\facebook\css\bootstrap\less\alerts.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\badges.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\bootstrap.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\breadcrumbs.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\button-groups.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\buttons.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\carousel.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\close.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\code.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\component-animations.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\dropdowns.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\forms.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\glyphicons.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\grid.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\input-groups.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\jumbotron.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\labels.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\list-group.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\media.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\alerts.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\buttons.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\center-block.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\forms.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\gradients.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\grid.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\image.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\labels.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\list-group.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\opacity.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\pagination.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\panels.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\resize.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\size.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\table-row.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\mixins.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\modals.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\navbar.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\navs.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\normalize.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\pager.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\pagination.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\panels.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\popovers.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\print.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\progress-bars.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\responsive-embed.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\responsive-utilities.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\scaffolding.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\tables.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\theme.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\thumbnails.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\tooltip.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\type.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\utilities.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\variables.less" />
+    <Content Include="theme\facebook\css\bootstrap\less\wells.less" />
+    <Content Include="theme\facebook\css\bootstrap\LICENSE" />
+    <Content Include="theme\facebook\css\bootstrap\package.json" />
+    <Content Include="theme\facebook\css\bootstrap\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibBusinessLayer\LibBusinessLayer.csproj">
+      <Project>{0e345396-5048-457b-900a-49635b678d4e}</Project>
+      <Name>LibBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibDataLayer\LibDataLayer.csproj">
+      <Project>{8280929d-34d4-441f-9847-05d9e15207c1}</Project>
+      <Name>LibDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\English.language.vi-vn.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>English.language.vi-vn.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\English.language.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>English.language.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pages\en\man\" />
+    <Folder Include="pages\en\woman\" />
+    <Folder Include="pages\vi\man\" />
+    <Folder Include="pages\vi\woman\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54367/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
