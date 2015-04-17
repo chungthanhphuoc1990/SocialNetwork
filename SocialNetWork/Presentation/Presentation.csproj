@@ -1402,7 +1402,6 @@
     <Folder Include="pages\en\man\" />
     <Folder Include="pages\en\woman\" />
     <Folder Include="pages\vi\man\plugin\" />
-    <Folder Include="pages\vi\man\upload\" />
     <Folder Include="pages\vi\woman\" />
   </ItemGroup>
   <PropertyGroup>
