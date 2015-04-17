@@ -649,6 +649,10 @@
     <Content Include="pages\vi\man\images\theme-boxed-3.jpg" />
     <Content Include="pages\vi\man\images\theme-coming.jpg" />
     <Content Include="pages\vi\man\images\top-logo.png" />
+    <Content Include="pages\vi\man\js\scripts.js" />
+    <Content Include="pages\vi\man\js\scripts.min.js" />
+    <Content Include="pages\vi\man\js\vendor.js" />
+    <Content Include="pages\vi\man\js\vendor.min.js" />
     <Content Include="page\Login.aspx" />
     <Content Include="page\page-childs.aspx" />
     <Content Include="page\Profice.aspx" />
