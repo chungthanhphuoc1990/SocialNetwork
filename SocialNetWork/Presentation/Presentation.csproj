@@ -907,6 +907,7 @@
     <Content Include="pages\vi\man\fonts\picto-foundry-weather.svg" />
     <Content Include="pages\vi\man\fonts\picto-foundry-weather.ttf" />
     <Content Include="pages\vi\man\fonts\picto-foundry-weather.woff" />
+    <Content Include="pages\vi\man\pages\social-network.Master" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="page\test2.aspx" />
     <Content Include="Scripts\jquery-1.6.4.js" />
@@ -1023,6 +1024,12 @@
     </Compile>
     <Compile Include="modules\plugin-top-news.ascx.designer.cs">
       <DependentUpon>plugin-top-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\vi\man\pages\social-network.Master.cs">
+      <DependentUpon>social-network.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\vi\man\pages\social-network.Master.designer.cs">
+      <DependentUpon>social-network.Master</DependentUpon>
     </Compile>
     <Compile Include="page\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -1385,6 +1392,8 @@
   <ItemGroup>
     <Folder Include="pages\en\man\" />
     <Folder Include="pages\en\woman\" />
+    <Folder Include="pages\vi\man\plugin\" />
+    <Folder Include="pages\vi\man\upload\" />
     <Folder Include="pages\vi\woman\" />
   </ItemGroup>
   <PropertyGroup>
