@@ -590,6 +590,7 @@
     <Content Include="pages\vi\man\css\purple.min.css" />
     <Content Include="pages\vi\man\css\_vendor.bundle.css" />
     <Content Include="pages\vi\man\css\_vendor.min.css" />
+    <Content Include="pages\vi\man\Default.aspx" />
     <Content Include="pages\vi\man\images\food1-full.jpg" />
     <Content Include="pages\vi\man\images\food1.jpg" />
     <Content Include="pages\vi\man\images\lock-1.jpg" />
@@ -1024,6 +1025,13 @@
     </Compile>
     <Compile Include="modules\plugin-top-news.ascx.designer.cs">
       <DependentUpon>plugin-top-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\vi\man\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\vi\man\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\vi\man\pages\social-network.Master.cs">
       <DependentUpon>social-network.Master</DependentUpon>
