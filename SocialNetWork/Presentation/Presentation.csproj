@@ -576,6 +576,20 @@
     <Content Include="pages\demo\themes\3\user-public-timeline.html" />
     <Content Include="pages\demo\themes\3\user-public-users.html" />
     <Content Include="pages\demo\themes\index.html" />
+    <Content Include="pages\en\man\css\blue.css" />
+    <Content Include="pages\en\man\css\blue.min.css" />
+    <Content Include="pages\en\man\css\brown.css" />
+    <Content Include="pages\en\man\css\brown.min.css" />
+    <Content Include="pages\en\man\css\default-nav-inverse.css" />
+    <Content Include="pages\en\man\css\default-nav-inverse.min.css" />
+    <Content Include="pages\en\man\css\default.css" />
+    <Content Include="pages\en\man\css\default.min.css" />
+    <Content Include="pages\en\man\css\orange.css" />
+    <Content Include="pages\en\man\css\orange.min.css" />
+    <Content Include="pages\en\man\css\purple.css" />
+    <Content Include="pages\en\man\css\purple.min.css" />
+    <Content Include="pages\en\man\css\_vendor.bundle.css" />
+    <Content Include="pages\en\man\css\_vendor.min.css" />
     <Content Include="pages\vi\man\css\blue.css" />
     <Content Include="pages\vi\man\css\blue.min.css" />
     <Content Include="pages\vi\man\css\brown.css" />
@@ -909,6 +923,7 @@
     <Content Include="pages\vi\man\fonts\picto-foundry-weather.ttf" />
     <Content Include="pages\vi\man\fonts\picto-foundry-weather.woff" />
     <Content Include="pages\vi\man\pages\social-network.Master" />
+    <Content Include="pages\en\man\css\default.css.map" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="page\test2.aspx" />
     <Content Include="Scripts\jquery-1.6.4.js" />
@@ -1399,7 +1414,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="pages\en\man\" />
     <Folder Include="pages\en\woman\" />
     <Folder Include="pages\vi\man\plugin\" />
     <Folder Include="pages\vi\woman\" />
