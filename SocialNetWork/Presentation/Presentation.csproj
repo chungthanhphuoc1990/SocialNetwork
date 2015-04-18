@@ -590,6 +590,7 @@
     <Content Include="pages\en\man\css\purple.min.css" />
     <Content Include="pages\en\man\css\_vendor.bundle.css" />
     <Content Include="pages\en\man\css\_vendor.min.css" />
+    <Content Include="pages\en\man\Default.aspx" />
     <Content Include="pages\en\man\fonts\fontawesome-webfont.svg" />
     <Content Include="pages\en\man\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="pages\en\man\fonts\picto-foundry-arrows.svg" />
@@ -664,6 +665,11 @@
     <Content Include="pages\en\man\images\theme-boxed-3.jpg" />
     <Content Include="pages\en\man\images\theme-coming.jpg" />
     <Content Include="pages\en\man\images\top-logo.png" />
+    <Content Include="pages\en\man\js\scripts.js" />
+    <Content Include="pages\en\man\js\scripts.min.js" />
+    <Content Include="pages\en\man\js\vendor.js" />
+    <Content Include="pages\en\man\js\vendor.min.js" />
+    <Content Include="pages\en\man\page\Default.aspx" />
     <Content Include="pages\vi\man\css\blue.css" />
     <Content Include="pages\vi\man\css\blue.min.css" />
     <Content Include="pages\vi\man\css\brown.css" />
@@ -1044,6 +1050,7 @@
     <Content Include="pages\en\man\fonts\picto-foundry-weather.eot" />
     <Content Include="pages\en\man\fonts\picto-foundry-weather.ttf" />
     <Content Include="pages\en\man\fonts\picto-foundry-weather.woff" />
+    <Content Include="pages\en\man\page\social-network.Master" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="page\test2.aspx" />
     <Content Include="Scripts\jquery-1.6.4.js" />
@@ -1160,6 +1167,26 @@
     </Compile>
     <Compile Include="modules\plugin-top-news.ascx.designer.cs">
       <DependentUpon>plugin-top-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en\man\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en\man\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en\man\page\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\en\man\page\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en\man\page\social-network.Master.cs">
+      <DependentUpon>social-network.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\en\man\page\social-network.Master.designer.cs">
+      <DependentUpon>social-network.Master</DependentUpon>
     </Compile>
     <Compile Include="pages\vi\man\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
